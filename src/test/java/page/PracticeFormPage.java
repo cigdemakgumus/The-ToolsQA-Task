@@ -34,29 +34,26 @@ public class PracticeFormPage {
     @FindBy(id ="dateOfBirthInput")
     public WebElement tarih;
 
+    @FindBy(xpath = "//select[@class='react-datepicker__month-select']")
+    public WebElement ddm_ay;
+
+    @FindBy(xpath = "//select[@class='react-datepicker__year-select']")
+    public WebElement ddm_yil;
+
     @FindBy(xpath = "(//div[text()='2'])[1]")
-    public WebElement tarihSec;
+    public WebElement gunSec;
 
     @FindBy(id ="hobbies-checkbox-1")
     public WebElement sportsRadioButonu;
 
-    @FindBy(id ="state")
-    public WebElement state;
-
-    @FindBy(id ="city")
-    public WebElement city;
-    @FindBy(xpath ="(//div[@class=' css-1wy0on6'])[1]")
-    public WebElement selectStateButonu;
-
-    @FindBy(xpath ="(//div[@class=' css-tlfecz-indicatorContainer'])[2]")
-    public WebElement selectCityButonu;
+    @FindBy(id ="uploadPicture")
+    public WebElement selectFile;
 
     @FindBy(id ="currentAddress")
     public WebElement adres;
 
 
-    @FindBy(id ="submit")
-    public WebElement submitButonu;
+
 
 
 }

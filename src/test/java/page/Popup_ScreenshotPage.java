@@ -14,6 +14,5 @@ public class Popup_ScreenshotPage {
     @FindBy(xpath ="//div[@class='modal-content']")
     public WebElement popup;
 
-    @FindBy(id ="closeLargeModal")
-    public WebElement closeButonu;
+
 }
